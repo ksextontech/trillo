@@ -20,13 +20,19 @@
     display: flex;
 }
 
-
 .sidebar {
     background-color: var(--color-grey-dark-1);
     flex: 0 0 18%; // grow, shrink, basis
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view {
     background-color: #fff;
     flex: 1; // grows all the way, occupy other 82%
+
+    background-color: orangered;
+    height: 80rem;
 }
