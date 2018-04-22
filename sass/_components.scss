@@ -370,10 +370,6 @@
         margin-right: auto;
     }
 
-    &__friends {
-
-    }
-
     &__photo {
         box-sizing: content-box; // does not include border in the height and width, so it doesn't "shrink" the image size with border box
         height: 4rem;
