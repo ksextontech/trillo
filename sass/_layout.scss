@@ -10,7 +10,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--color-grey-light-2);
+    border-bottom: 1px solid var(--color-grey-light-2);
     display: flex;
     justify-content: space-between; // divide empty space between the elements
     align-items: center;
@@ -32,7 +32,4 @@
 .hotel-view {
     background-color: #fff;
     flex: 1; // grows all the way, occupy other 82%
-
-    background-color: orangered;
-    height: 80rem;
 }
