@@ -405,15 +405,19 @@
             margin: .7rem;
 
             // older browsers -- you can't apply color to the icon :(
-            // background-image: url('../img/chevron-thin-right.svg');
-            // background-size: cover;
+            background-image: url('../img/chevron-thin-right.svg');
+            background-size: cover;
 
             // newer browsers -- use masks
-            background-color: var(--color-primary);
-            -webkit-mask-image: url('../img/chevron-thin-right.svg');
-            -webkit-mask-size: cover;
-            mask-image: url('../img/chevron-thin-right.svg');
-            mask-size: cover;
+            @supports(-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: var(--color-primary);
+                -webkit-mask-image: url('../img/chevron-thin-right.svg');
+                -webkit-mask-size: cover;
+                mask-image: url('../img/chevron-thin-right.svg');
+                mask-size: cover;
+                background-image: none;
+            }
+            
 
             // these weren't in the course, but the positioning looked off
             position: relative;
